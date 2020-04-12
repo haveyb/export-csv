@@ -1,0 +1,27 @@
+{
+  "name": "haveyb/export-csv",
+  "description": "PHP 数据导出，使用 yield 优化导出大数据量时内存占用过高导致宕机",
+  "keywords": [
+    "导出",
+    "数据",
+    "yield",
+    "内存"
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=7.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "haveyb",
+      "email": "haveyb@163.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload":{
+    "psr-4":{
+      "haveyb\\ExportCsv\\":"./src/"
+    }
+  }
+}
