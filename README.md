@@ -18,7 +18,11 @@ $csv = new ExportCsv();
 
 $sql = 'select admin_id,user_name,age from admin';
 
-$head = ['ID', '用户名', '年龄'];
+$head = ['用户ID', '用户名', '年龄'];
 
 $csv->exportCsv($sql, $head, 'test_1', '后台用户表');
 ```
+
+注意：
+
+在导出数据到表格时，第一个字段名尽量不要设置为 'ID' 这两个字母，因为这将会使 wps 报一个 ’wps表格已经监测到...是SYLK文件，但是不能将其加载‘的错误，不妨试一试。

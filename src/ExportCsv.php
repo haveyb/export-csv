@@ -9,10 +9,10 @@ use \PDO;
 class ExportCsv
 {
     private $mysqlConnect;
-    private function __construct()
+    public function __construct()
     {
         // 获取配置的mysql连接
-        $this->mysqlConnect = require './MySQLConfig.php';
+        $this->mysqlConnect = require 'MySQLConfig.php';
     }
 
     /**
